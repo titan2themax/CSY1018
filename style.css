@@ -1,0 +1,379 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-image: url("backgroundWeb.png"); /* image taken from www.toptal.com and used on all pages */
+  }
+  
+  .nav {
+    order: -1;
+    background: none;
+    margin: 5px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background: none;
+    text-align: center;
+    margin: 5px;
+    margin-top: 0px;
+  }
+
+  .footer2 {
+    margin: 10px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;  
+  }
+  
+  .main {
+    background: rgb(187, 179, 135);
+    text-align: center;
+    margin: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 20px;
+  }
+
+  .aside {
+    padding: 1em;
+    text-align: center;
+    margin: 10px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    align-content: space-around;
+  }
+  
+  .wrapper2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  
+  .wrapper3 {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+  }
+
+  .wrapper4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  
+  @media (max-width: 30em) {
+    .main {
+      flex: 1 0 auto;
+    }
+    #sectionone {
+      flex: 1 0 auto;
+    }
+    #sectiontwo {
+      flex: 1 0 auto;
+    }
+    #sectionthree {
+      flex: 1 0 auto;
+    }
+    .section {
+      flex: 1 0 auto;
+    }
+    .sectionadd {
+      flex: 1 0 auto;
+    }
+  }
+  
+  @media (min-width: 30em) {
+    .nav {
+      display: grid;
+    }
+    .wrapper {
+      flex-direction: row;
+    }
+    .main {
+      flex: 1 1 auto;
+    }
+    .aside {
+      width: auto;
+    }
+    .wrapper2 {
+      flex-direction: row;
+    }
+    .wrapper3 {
+      flex-direction: row;
+    }
+    #sectionone {
+      flex: 1 1 auto;
+    }
+    #sectiontwo {
+      flex: 1 1 auto;
+    }
+    #sectionthree {
+      flex: 1 1 auto;
+    }
+    .section {
+      flex: 1 1 auto;
+    }
+    .sectionadd{
+      flex: 1 1 auto;
+    }
+  }
+  
+  .nav ul {
+    overflow: auto;
+    list-style-type: none;
+  }
+  
+  .nav li {
+    height: 35px;
+    float: left;
+    margin-right: 0px;
+    border-right: 2px solid #aaa;
+    padding: 10px 20px;
+  }
+
+  .nav li:last-child {
+    border-right: none;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    font-family: 'Tangerine';
+    font-size: 45px; /*Helvetica, Verdana, sans-serif;*/
+    font-weight: bold;
+    text-transform: capitalize;
+    -webkkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .nav li a:hover {
+    color: rgb(214, 193, 87);
+  }
+    
+  .nav li.active a {
+    font-weight: bold;
+    color: #4cad26;
+  }
+
+  .nav2 li.active a {
+    font-weight: bold;
+    color: black;
+  }
+  
+  #mainheader {
+    font-size: 25px;
+  }
+
+  .myteamsection {
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .nav2 ul {
+    list-style-type: none;
+  }
+
+  .nav2 li a:hover {
+    color:black;
+  }
+
+  .nav2 li a {
+    color:gray;
+    text-decoration: none;
+  }
+
+  #Ekowsmallimage {
+    border-radius: 30px;
+  }
+
+  #Jamessmallimage {
+    border-radius: 30px;
+  }
+
+  #Liamsmallimage {
+    border-radius: 30px;
+  }
+
+  .Jamessmallimage {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+  }
+
+  .Liamsmallimage {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+  }
+
+  .Ekowsmallimage {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+  }
+
+  .section {
+    background: rgb(187, 179, 135);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .sectionadd {
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    padding: 20px;
+
+  }
+
+  .specialheader {
+    font-family: 'Tangerine';
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 40px;
+  }
+
+  .specialtext {
+    text-align: left;
+    font-family: "sans-serif";
+    font-size: 18px;
+  }
+
+  .specialsubheaders {
+    text-align: left;
+    font-family: "Tangerine";
+    text-decoration: underline;
+    font-size: 40px;
+  }
+
+  .glossheader {
+    font-family: "Pacifico";
+    font-size: 25px;
+    line-height: 35px;
+    align-content: center;
+  }
+
+  .glosssectionone {
+    background: rgb(187, 179, 135);
+    background-position: center;  
+    background-size: cover;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .glosssectiontwo {
+    background: rgb(187, 179, 135);
+    background-position: center;  
+    background-size: cover;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .glosstext {
+    text-align: left;
+    font-family: "sans-serif";
+    line-height: 25px;
+  }
+
+  .glosssubheader {
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+
+  #sectionone {
+    background: rgb(187, 179, 135);
+    background-position: center;  
+    background-size: cover;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #sectiontwo {
+    background: rgb(187, 179, 135);
+    background-position: center;  
+    background-size: cover;
+    text-align: left;
+    padding: 10px;
+    line-height: 10px;
+    margin: 10px;
+  }
+
+  #sectionthree {
+    background: rgb(187, 179, 135);
+    text-align: left;
+    background-position: center;  
+    background-size: cover;
+    padding: 10px; 
+    margin: 10px;
+    line-height: 10px;
+  }
+
+  .comparisonheader {
+    font-family: "Pacifico";
+    font-size: 25px;
+  }
+
+  .comparisontext {
+    font-family: "sans-serif";
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .mainpractices {
+    flex: 1 0 auto;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-position: center;  
+    background-size: cover;
+  }
+
+  .mainreflection {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: rgb(187, 179, 135);
+    text-align: center;
+    background-position: center;  
+    background-size: cover; 
+  }
+
+  .practicaltext {
+    font-family: "sans-serif";
+    text-align: left;
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  /*#facebookicon {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #maplocator {
+    display: flex;
+    align-items: flex-start;
+  }*/
